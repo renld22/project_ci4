@@ -41,8 +41,10 @@ public function tambah()
         $kodeDosen = $this->request->getPost('kode_dosen');
         $namaDosen = $this->request->getPost('nama_dosen');
         $statusDosen = $this->request->getPost('status_dosen');
-
+        
+        
         // Simpan data ke database, sesuaikan dengan model dan database Anda
+
         $dosenModel = new \App\Models\DosenModel();
         $dosenModel->save([
             'kode_dosen' => $kodeDosen,
@@ -54,6 +56,15 @@ public function tambah()
         session()->setFlashdata('message', 'Data dosen berhasil ditambahkan.');
 
         // Redirect ke halaman index atau halaman lainnya
+    
+        $token = "6529145410:AAG17oB0Dcd4IguSmxuJ3tHz9qVYR_B_cX4"; // token bot
+ 
+		$datas = [
+		'text' =>"renal",
+		'chat_id' => '-1002035197474'  //contoh bot, group id -442697126
+		];
+       
+		file_get_contents("https://api.telegram.org/bot$token/sendMessage?" . http_build_query($datas) );
         return redirect()->to('/dosen');
     }
 
