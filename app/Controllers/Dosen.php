@@ -57,11 +57,11 @@ public function tambah()
 
         // Redirect ke halaman index atau halaman lainnya
     
-        $token = "6529145410:AAG17oB0Dcd4IguSmxuJ3tHz9qVYR_B_cX4"; // token bot
+        $token = getenv('TELEGRAM_BOT_TOKEN'); // token bot
  
 		$datas = [
-		'text' =>"renal",
-		'chat_id' => '-1002035197474'  //contoh bot, group id -442697126
+		'text' =>"",
+		'chat_id' => getenv('TELEGRAM_CHAT_ID')  //contoh bot, group id -442697126
 		];
        
 		file_get_contents("https://api.telegram.org/bot$token/sendMessage?" . http_build_query($datas) );

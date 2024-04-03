@@ -49,7 +49,7 @@
                         <?php endforeach ?>
                     </tbody>
                 </table>
- 
+                <a href="/" class="btn btn-danger">kembali</a>
             </div>
         </div>
     </div>
