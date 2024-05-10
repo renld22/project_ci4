@@ -33,7 +33,7 @@ class Login extends BaseController
                 'chat_id' => getenv('TELEGRAM_CHAT_ID')  //contoh bot, group id -442697126
                 ];
                
-                file_get_contents("https://api.telegram.org/bot$token/sendMessage?" . http_build_query($datas) );
+                
                 
                 return redirect()->to(base_url('/dosen'));
             } else {

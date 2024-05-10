@@ -10,6 +10,6 @@ class TransaksiModel extends Model
 
     protected $primaryKey = 'id_transaksi_header';
     
-    protected $allowedFields = ['id_customer', 'nomor_transaksi', 'tanggal_transaksi', 'total', 'diskon', 'ppn', 'grand_total'];
+    protected $allowedFields = ['id_customer', 'nomer_transaksi', 'tanggal_transaksi', 'total', 'diskon', 'ppn', 'grand_total'];
 
 }

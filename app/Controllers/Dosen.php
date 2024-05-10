@@ -16,9 +16,6 @@ public function index()
     'pager' => $DataDosen->pager
     );
     return view('dosen', $data);
-
- 
-
 }
 
 public function tambah()

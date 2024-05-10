@@ -16,7 +16,8 @@ class Barang extends BaseController
     {
         $data = [
             'active' => 'barang',
-            'judul' => 'Master Data'
+            'judul' => 'Master Data',
+            'barang' => $this->barang->findAll()
         ];
         return view('barang', $data);
     }

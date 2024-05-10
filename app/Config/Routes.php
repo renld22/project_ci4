@@ -17,6 +17,7 @@ $routes->get('/barang', 'Barang::index');
 $routes->get('/barang/(:num)', 'Barang::detail/$1');
 
 $routes->get('/customer', 'Customer::index');
+$routes->post('/customer/tambah', 'Customer::tambah');
 
 
 $routes->get('transaksi/input', 'TransaksiController::input');
