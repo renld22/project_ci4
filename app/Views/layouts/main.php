@@ -114,7 +114,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </li>
             </ul>
           </li>
-          
+          <li class="nav-item">
+                <a href="/transaksi_detail" class="nav-link <?= ($active == 'transaksi_detail') ? 'active' : '' ?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Transaksi Detail</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/transaksi_header" class="nav-link <?= ($active == 'transaksi_header') ? 'active' : '' ?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Transaksi Header</p>
+                </a>
+              </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
