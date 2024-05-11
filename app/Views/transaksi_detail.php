@@ -29,7 +29,7 @@
                 <thead>
                     <tr class="text-center">
                         <th width="50px">No</th>
-                        <th>Transaksi Header</th>
+                        <th>Transaksi detail</th>
                         <th>Barang</th>
                         <th>Qty</th>
                         <th>Harga</th>
